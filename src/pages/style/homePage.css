@@ -4,7 +4,6 @@
     --backGround-color: rgba(255, 255, 255, 0.49);
 }
 .pokedex_container {
-    border: 1px solid black;
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,7 +12,7 @@
     align-items: center;
 }
 .pokedex_text_intro {
-    margin-top: 100px;
+    margin-top: 200px;
     color: var(--text-color);
     font-size: 3.5rem;
     
@@ -68,7 +67,7 @@
     border-radius: 0 5px 5px 0;
 }
 .pokedex-footer__img {
-    margin-top: 100px;
+    margin-top: 130px;
     width: 100%;
     height: 70px;
     background-image: url("/pokedexfotter.svg");

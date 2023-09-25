@@ -6,7 +6,7 @@
 .pokedex_container {
     border: 1px solid black;
     width: 100%;
-    min-height: 500px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@
 .pokedex-footer__img {
     margin-top: 100px;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-image: url("/pokedexfotter.svg");
     background-position: center;
     background-repeat: no-repeat;

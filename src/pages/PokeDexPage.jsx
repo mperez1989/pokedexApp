@@ -3,7 +3,6 @@ import useFetch from "../hooks/useFetch"
 import { useEffect, useRef, useState } from "react"
 import PokeCard from "../components/PokeDexPage/PokeCard"
 import Select from "../components/PokeDexPage/Select"
-import "../pages/style/PokedexPage.css"
 
 const PokeDexPage = () => {
 

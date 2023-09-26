@@ -1,7 +1,8 @@
+/*pokedex segunda pagina*/
 .pokedex_search_cotainer {
+    border: 1px solid black;
     position: relative;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,7 +23,7 @@
     left: 20px;
     width: 200px;
     height: 30px;
-    background-image: url("/public/pokedex.svg");
+    background-image: url("/pokedex.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,6 +11,7 @@ const PokeCard = ({ url }) => {
     useEffect(()=>{
         getPokemon()
     }, [])
+    console.log(pokemon)
 
     const handleNavigate = () => {
         navigate(`/pokedex/${pokemon.id}`)
@@ -23,21 +24,21 @@ const PokeCard = ({ url }) => {
         <header className="header_card_img">
             <img src={pokemon?.sprites.other[`official-artwork`].front_default} alt="" />
         </header>
-        <section>
+        <section className="card_section_container">
             <h3>{pokemon?.name}</h3>
-            <ul>
+            <ul className="card_list_type">
                 {
                     pokemon?.types.map((typeInfo)=>(
                         <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
                     ))
                 }
             </ul>
-            <ul>
+            <ul className="card_list_move">
                 {
                     pokemon?.stats.map(statInfo => (
-                        <li key={statInfo.stat.url}>
-                            <span>{statInfo.stat.name}</span>
-                            <span>{statInfo.base_stat}</span>
+                        <li key={statInfo.stat.url} className="items">
+                            <span className="card_move_name">{statInfo.stat.name}</span> <br />
+                            <span className="card_move_num">{statInfo.base_stat}</span>
                         </li>
                     ))
                 }

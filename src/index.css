@@ -12,9 +12,13 @@ html {
 body {
     background-color: rgba(255, 255, 255, 0.49);
 }
+ul {
+    list-style: none;
+}
+
+/*card*/
 
 .pokeCard-container {
-    border: 1px solid black;
     width: 100%;
     min-height: 300px;
     margin-top: 50px;
@@ -22,18 +26,23 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 .card_container {
     border: 1px solid black;
+    position: relative;
     width: 240px;
     height: 320px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .header_card_img {
-    border: 1px solid black;
-    width: 160px;
-    height: 145px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 140px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -41,5 +50,49 @@ body {
 }
 .header_card_img img {
     width: 150px;
+    aspect-ratio: 1;
+}
+.card_section_container {
+    position: relative;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 230px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.card_section_container h3 {
+    position: absolute;
+    top: 50px;
+    font-size: 2.5rem;
+}
+.card_list_type {
+    position: absolute;
+    top: 80px;
+    font-size: 1.4rem;
+    display: flex;
+}
+.card_list_move {
+    border-top: 2px solid gray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    text-align: center;
+    align-items: center;
+}
+.card_move_name {
+    color: grey;
+    font-weight: bold;
+}
+.card_move_num {
+    font-size: 2rem;
+    font-weight: bold;
 }

@@ -66,12 +66,12 @@ ul {
 }
 .card_section_container h3 {
     position: absolute;
-    top: 50px;
+    top: 55px;
     font-size: 2.5rem;
 }
 .card_list_type {
     position: absolute;
-    top: 80px;
+    top: 85px;
     font-size: 1.4rem;
     display: flex;
 }
@@ -95,4 +95,11 @@ ul {
 .card_move_num {
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media(min-width: 500px) {
+    .pokeCard-container{
+        width: 90%;
+    }
+
 }

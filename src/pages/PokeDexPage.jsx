@@ -13,7 +13,7 @@ const PokeDexPage = () => {
   const trainer = useSelector(store => store.trainer)
   const inputSearch = useRef()
 
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=20`
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=100`
   const [ pokemons, getPokemons, getTypePokemon] = useFetch(url)
 
   useEffect(() => {

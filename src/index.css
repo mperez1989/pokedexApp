@@ -19,9 +19,9 @@ ul {
 /*card*/
 
 .pokeCard-container {
-    width: 100%;
+    width: 60%;
     min-height: 300px;
-    margin-top: 50px;
+    margin-top: 120px;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ ul {
 .header_card_img {
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 125px;
     height: 140px;
     margin: 0 auto;
     display: flex;
@@ -49,7 +49,7 @@ ul {
     align-items: center;
 }
 .header_card_img img {
-    width: 150px;
+    width: 130px;
     aspect-ratio: 1;
 }
 .card_section_container {

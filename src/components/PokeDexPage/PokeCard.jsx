@@ -29,7 +29,7 @@ const PokeCard = ({ url }) => {
             <ul className="card_list_type">
                 {
                     pokemon?.types.map((typeInfo)=>(
-                        <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
+                        <li key={typeInfo.type.url}>/{typeInfo.type.name}/</li>
                     ))
                 }
             </ul>

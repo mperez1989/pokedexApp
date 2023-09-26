@@ -2,7 +2,6 @@
 import { useEffect } from "react"
 import useFetch from "../../hooks/useFetch"
 import { useNavigate } from "react-router-dom"
-import "../PokeDexPage/style/PokeCard.css"
 
 const PokeCard = ({ url }) => {
 

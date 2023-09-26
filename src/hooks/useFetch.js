@@ -21,7 +21,6 @@ const useFetch = (url) => {
           setInfoApi(obj)
         })
         .catch(err => console.log(err))
-
   }
 
   return [infoApi, getApi, getTypeApi] 

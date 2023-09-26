@@ -3,6 +3,7 @@ import useFetch from "../hooks/useFetch"
 import { useEffect, useRef, useState } from "react"
 import PokeCard from "../components/PokeDexPage/PokeCard"
 import Select from "../components/PokeDexPage/Select"
+import "../pages/style/PokedexPage.css"
 
 const PokeDexPage = () => {
 
@@ -41,8 +42,8 @@ const PokeDexPage = () => {
 
   return (  
     <div className="pokedex_search_cotainer">
-      <span className="pokedex_search_img"></span>
-      <span className="pokedex_search_name"></span>
+      <div className="pokedex-header-container"></div>
+      <div className="pokedex-name"></div>
       <p className="pokedex_search_text">Hi ¡{trainer}!</p>
       <form className="pokedex_search_form" onSubmit={handleSearch} action="">
         <input ref={inputSearch} type="text" />

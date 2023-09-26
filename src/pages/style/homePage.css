@@ -14,8 +14,7 @@
 .pokedex_text_intro {
     margin-top: 220px;
     color: var(--text-color);
-    font-size: 3.5rem;
-    
+    font-size: 3.5rem;    
 }
 .pokedex_img {
     margin-top: 10px;
@@ -76,7 +75,6 @@
     background-size: cover;
 }
 
-
 @media(min-width: 500px) {
     .pokedex_text_intro {
         margin-top: 90px;
@@ -88,7 +86,6 @@
     .pokedex-footer__img {
         margin-top: 87px;
     }
-
 }
 
 @media(min-width: 800px) {
@@ -103,5 +100,4 @@
         margin-top: 105px;
         height: 130px;
     }
-
 }

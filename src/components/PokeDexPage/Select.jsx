@@ -4,7 +4,6 @@ import useFetch from "../../hooks/useFetch"
 const Select = ({ setTypeSelected }) => {
 
     
-
     const url = `https://pokeapi.co/api/v2/type`
     const [ types, getTypes] = useFetch(url)
 
@@ -16,9 +15,6 @@ const Select = ({ setTypeSelected }) => {
         setTypeSelected(e.target.value)
 
     }
-
-
-    
 
   return (
     <div>

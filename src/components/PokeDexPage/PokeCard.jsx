@@ -2,6 +2,7 @@
 import { useEffect } from "react"
 import useFetch from "../../hooks/useFetch"
 import { useNavigate } from "react-router-dom"
+import "../PokeDexPage/style/PokeCard.css"
 
 const PokeCard = ({ url }) => {
 
@@ -19,8 +20,8 @@ const PokeCard = ({ url }) => {
 
     
   return (
-    <article onClick={handleNavigate}>
-        <header>
+    <article className="card_container" onClick={handleNavigate}>
+        <header className="header_card_img">
             <img src={pokemon?.sprites.other[`official-artwork`].front_default} alt="" />
         </header>
         <section>

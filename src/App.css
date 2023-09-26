@@ -9,6 +9,7 @@
 }
 
 .pokedex-header-container {
+    position: static;
     width: 100%;
     height: 51px;
     background-image: url("/pokedexheader.svg");

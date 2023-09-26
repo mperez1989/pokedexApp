@@ -54,7 +54,6 @@
     border: grey solid 0.2px;
     border-right: none;
     border-radius: 5px 0 0 5px;
-
     box-shadow: 3px 4px 4px 0 grey;
 }
 .pokedex_form_container button {
@@ -65,6 +64,7 @@
     color: white;
     font-weight: bold;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 .pokedex-footer__img {
     margin-top: 130px;

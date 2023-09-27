@@ -12,7 +12,7 @@
     align-items: center;
   }
   .pokedex_text_intro {
-    margin-top: 140px;
+    margin-top: 180px;
     color: var(--text-color);
     font-size: 3.5rem;    
   }

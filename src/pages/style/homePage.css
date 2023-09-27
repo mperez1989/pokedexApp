@@ -12,7 +12,7 @@
     align-items: center;
   }
   .pokedex_text_intro {
-    margin-top: 220px;
+    margin-top: 140px;
     color: var(--text-color);
     font-size: 3.5rem;    
   }
@@ -76,71 +76,6 @@
   }
 
 @media(min-width: 500px) {
-    .pokedex_text_intro{
-        font-size: 3.5rem;
-    }
-    .pokedex_text {
-        font-size: 2.5rem;
-    }
-    .pokedex_star {
-        font-size: 1.8rem;
-    }
-    .pokedex_img {
-        width: 350px;
-        height: 60px;
-    }
-    .pokedex-footer__img {
-        height: 85px;
-    }
-    .pokedex_form_container input {
-        width: 250px;
-    }
-    .pokedex_form_container button {
-        padding: 5.6px;
-    }
-
-}
-@media(min-width: 800px) {
-    .pokedex_text_intro{
-        font-size: 4rem;
-    }
-    .pokedex_text {
-        font-size: 3rem;
-    }
-    .pokedex_star {
-        font-size: 2rem;
-    }
-    .pokedex_img {
-        width: 450px;
-        height: 80px;
-    }
-    .pokedex-footer__img {
-        height: 120px;
-    }
-    .pokedex_form_container input {
-        width: 300px;
-    }
-
-}
-@media(min-width: 1100px) {
-    .pokedex_text_intro {
-        bottom: 90px;
-    }
-    .pokedex_img {
-        bottom: 90px;
-    }
-    .pokedex_text {
-        bottom: 70px;
-    }
-    .pokedex_star {
-        bottom: 70px;
-    }
-    .pokedex_form_container {
-        position: relative;
-        bottom: 50px;
-    }
-    .pokedex-footer__img {
-        height: 150px;
-    }
+    
 
 }

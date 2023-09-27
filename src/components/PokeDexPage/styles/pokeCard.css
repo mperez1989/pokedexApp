@@ -8,7 +8,6 @@
 }
 .pokecard:hover {
     transform: scale(1.03);
-
 }
 .pokecard__header {
     background-color: #999;
@@ -31,7 +30,6 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.2em;
-
 }
 .pokecard__types {
     display: flex;
@@ -59,8 +57,7 @@
 .pokecard__stat {
     display: grid;
     gap: 0.4em;
-    justify-items: center;
-    
+    justify-items: center;   
 }
 .pokecard__stat__name {
     font-size: 0.7rem;

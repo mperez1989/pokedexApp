@@ -20,15 +20,15 @@ const HomePage = () => {
 
   return (
     <div className="pokedex_container">
-        <h1 className="pokedex_text_intro">Pokedex App</h1>
-        <span className="pokedex_img"></span>
-        <h2 className="pokedex_text">¡Hi Trainer!</h2>
-        <p className="pokedex_star">Give me...! your trainer name to star!</p>
-        <form className="pokedex_form_container" onSubmit={handleTrainer} action="">
-            <input ref={inputTrainer} type="text" placeholder="Trainer Name..."/>
-            <button className="pokedex_btn">let´s star</button>
-        </form>
-        <span className="pokedex-footer__img"></span>
+      <h1 className="pokedex_text_intro">Pokedex App</h1>
+      <span className="pokedex_img"></span>
+      <h2 className="pokedex_text">¡Hi Trainer!</h2>
+      <p className="pokedex_star">Give me...! your trainer name to star!</p>
+      <form className="pokedex_form_container" onSubmit={handleTrainer} action="">
+          <input ref={inputTrainer} type="text" placeholder="Trainer Name..."/>
+          <button className="pokedex_btn">let´s star</button>
+      </form>
+      <span className="pokedex-footer__img"></span>
     </div>
   )
 }

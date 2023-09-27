@@ -2,6 +2,7 @@
 import { useEffect } from "react"
 import useFetch from "../../hooks/useFetch"
 import { useNavigate } from "react-router-dom"
+import "./styles/pokeCard.css"
 
 const PokeCard = ({ url }) => {
 
@@ -20,25 +21,26 @@ const PokeCard = ({ url }) => {
 
     
   return (
-    <article className="card_container" onClick={handleNavigate}>
-        <header className="header_card_img">
-            <img src={pokemon?.sprites.other[`official-artwork`].front_default} alt="" />
+    <article className={`pokecard ${pokemon?.types[0].type.name}-border`} onClick={handleNavigate}>
+        <header className={`pokecard__header ${pokemon?.types[0].type.name}-gradient`}>
+            <img className="pokecard__image" src={pokemon?.sprites.other[`official-artwork`].front_default} alt="" />
         </header>
-        <section className="card_section_container">
-            <h3>{pokemon?.name}</h3>
-            <ul className="card_list_type">
+        <section className="pokecard__body">
+            <h3 className={`pokecard__name ${pokemon?.types[0].type.name}-color`}>{pokemon?.name}</h3>
+            <ul className="pokecard__types">
                 {
                     pokemon?.types.map((typeInfo)=>(
-                        <li key={typeInfo.type.url}>/{typeInfo.type.name}/</li>
+                        <li className="pokecard__typename" key={typeInfo.type.url}>{typeInfo.type.name}</li>
                     ))
                 }
             </ul>
-            <ul className="card_list_move">
+            <hr className="pokecard__hr" />
+            <ul className="pokecard__stats">
                 {
                     pokemon?.stats.map(statInfo => (
-                        <li key={statInfo.stat.url} className="items">
-                            <span className="card_move_name">{statInfo.stat.name}</span> <br />
-                            <span className="card_move_num">{statInfo.base_stat}</span>
+                        <li key={statInfo.stat.url} className="pokecard__stat">
+                            <h4 className="pokecard__stat__name">{statInfo.stat.name}</h4>
+                            <span className="pokecard__stat__value">{statInfo.base_stat}</span>
                         </li>
                     ))
                 }

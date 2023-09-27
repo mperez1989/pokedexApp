@@ -53,7 +53,7 @@ const PokeDexPage = () => {
         
       />
 
-      <div className="pokeCard-container">
+      <div className="pokeCard-containe">
         {
           pokeFiltered?.map( poke => (
             <PokeCard

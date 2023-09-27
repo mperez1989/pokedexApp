@@ -76,6 +76,44 @@
   }
 
 @media(min-width: 500px) {
+    .pokedex_text_intro {
+        margin-top: 50px;
+
+    }
+    .pokedex-footer__img {
+        margin-top: 133px;
+    }
+    .pokedex_img {
+        width: 350px;
+        height: 60px;
+    }
+    
+
+}
+
+@media(min-width: 800px) {
+    .pokedex_text_intro {
+        margin-top: 108px;
+
+    }
+    .pokedex-footer__img {
+        margin-top: 250px;
+    }
+    .pokedex_img {
+        width: 350px;
+        height: 60px;
+    }
+    
+
+}
+@media(min-width: 1100px) {
+    .pokedex-footer__img {
+        margin-top: 160px;
+    }
+    .pokedex_img {
+        width: 350px;
+        height: 60px;
+    }
     
 
 }

@@ -1,9 +1,11 @@
 .pkecard__id {
     width: 95%;
-    max-width: 350px;
+    max-width: 360px;
     border-radius: 0.7em;
+    margin-top: 50px;
     border: 0.5em solid #555;
     background-color: white;
+    border-color: grey;
 }
 .pokecard__id__header {
     background-color: #999;
@@ -20,6 +22,7 @@
     padding: 5.5em 1em 2em;
 }
 .pokecard__id__order {
+    margin-top: 15px;
     position: relative;
     font-size: 2rem;
     border: 1px grey solid;
@@ -108,6 +111,45 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
+.pokecard__id__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    gap: 3em;
+}
+.pkecard__id_moves {
+    width: 90%;
+    max-width: 360px;
+    border-radius: 0.7em;
+    border: 0.5em solid #555;
+    background-color: white;
+    padding: 2em;
+    border: 0.8em gray solid;
+}
+.pkecard__id_moves h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.moved__container {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+.moves__items {
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+    background-color: grey;
+
+}
 .grass-gradiente {
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
 }
@@ -117,11 +159,92 @@
 .grass-background {
     background-color: #ABDAC6;
 }
-.pokecard__id__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #555;
-    gap: 3em;
+.fire-border {
+    border-color: #E35825;
+}
+.fire-background {
+    background-color: #E35825;
+}
+.water-border {
+    border-color: #82B2F1
+    ;
+}
+.water-background {
+    background-color: #82B2F1
+    ;
+}
+.normal-border {
+    border-color: #7C3F4C;
+}
+.normal-background {
+    background-color: #BC6B7C;
+}
+.fighting-border {
+    border-color: #F1613C;
+}
+.fighting-background {
+    background-color: #F1613C;
+}
+.poison-border {
+    border-color: #A564E3;
+}
+.poison-background{
+    background-color: #A564E3;
+}
+.ground-border {
+    border-color: #895C1A;
+}
+.ground-background {
+    background-color: #895C1A;
+}
+.rock-border {
+    border-color: #8D8D94;
+}
+.rock-background {
+    background-color: #8D8D94;
+}
+.bug-border {
+    border-color: #3BB039;
+}
+.bug-background {
+    background-color: #3BB039;
+}
+.ghost-border {
+    border-color: #454AA8;
+}
+.ghost-background {
+    background-color: #454AA8;
+}
+.steel-border {
+    border-color: #728881;
+}
+.steel-background {
+    background-color: #728881;
+}
+.electric-border {
+    border-color: #2B319B;
+}
+.electric-background {
+    background-color: #2B319B;
+}
+.ice-border {
+    border-color: #64CBF5;
+}
+.ice-background {
+    background-color: #64CBF5;
+}
+.dragon-border {
+    border-color: #56A4AE;
+}
+.dragon-background {
+    background-color: #56A4AE;
+}
+.dark-border {
+    border-color: #0D1211;
+}
+.fairy-border {
+    border-color: #C23867;
+}
+.fairy-background {
+    background-color: #C23867;
 }

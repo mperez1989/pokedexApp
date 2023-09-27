@@ -77,12 +77,12 @@ const PokeDexIdPage = () => {
           </div>
         </section>
     </article>
-    <article>
+    <article className={`pkecard__id_moves ${typeColor}-border`}>
       <h3>Moves</h3>
-      <ul>
+      <ul className="moved__container">
         {
           pokemon?.moves.map(e => (
-            <li key={e.move.url}>
+            <li key={e.move.url} className={`moves__items ${typeColor}-background`}>
               <span>{e.move.name}</span>
 
             </li>

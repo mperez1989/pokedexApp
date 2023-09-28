@@ -62,6 +62,7 @@
 .pkecard__id__types__abilities h3 {
     font-size: 1.5rem;
     text-align: center;
+    text-transform: capitalize;
 }
 .pkecard__id__types__abilities ul {
     margin-top: 5px;
@@ -69,6 +70,7 @@
     gap: 1em;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
 }
 .pokecard__id__type {
     padding: 0.2em 0.5em;
@@ -143,11 +145,12 @@
 }
 .moves__items {
     border: 1px solid gray;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     padding: 0.2em 1em;
     border-radius: 0.5em;
     background-color: grey;
+    text-transform: capitalize;
 
 }
 .grass-gradiente {

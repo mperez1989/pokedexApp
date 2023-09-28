@@ -9,7 +9,6 @@ const PokeDexPage = () => {
 
   const [inputValue, setInputValue] = useState(" ")
   const [typeSelected, setTypeSelected] = useState("allPokemons")
-  console.log(typeSelected)
 
   const trainer = useSelector(store => store.trainer)
   const inputSearch = useRef()

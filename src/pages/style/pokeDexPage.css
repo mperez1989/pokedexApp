@@ -29,9 +29,10 @@
   .pokedex-name:hover {
     transform: scale(1.1);
   }
-  .pokedex_search_cotainer p {
-    font-size: 2rem;
+  .pokedex_search_cotainer h1 {
+    font-size: 5rem;
     font-weight: bold;
+    color: var(--btn-color);
   }
   .pokedex_search_form {
     margin-top: 20px;

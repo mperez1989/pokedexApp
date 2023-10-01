@@ -43,7 +43,8 @@ const PokeDexPage = () => {
     <div className="pokedex_search_cotainer">
       <div className="pokedex-header-container"></div>
       <div className="pokedex-name"></div>
-      <p>Hi ¡{trainer}!</p>
+      <h1>Hi ¡{trainer}!</h1>
+      <p>you can search you favpurite pokemon</p>
       <form className="pokedex_search_form" onSubmit={handleSearch} action="">
         <input ref={inputSearch} type="text" placeholder="all pokemons" />
         <button>Search</button>

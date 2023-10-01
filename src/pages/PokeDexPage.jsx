@@ -7,13 +7,13 @@ import "../pages/style/pokeDexPage.css"
 
 const PokeDexPage = () => {
 
-  const [inputValue, setInputValue] = useState(" ")
+  const [inputValue, setInputValue] = useState("")
   const [typeSelected, setTypeSelected] = useState("allPokemons")
 
   const trainer = useSelector(store => store.trainer)
   const inputSearch = useRef()
 
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=100`
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=20`
   const [ pokemons, getPokemons, getTypePokemon] = useFetch(url)
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const PokeDexPage = () => {
       <div className="pokedex-header-container"></div>
       <div className="pokedex-name"></div>
       <h1>Hi ¡{trainer}!</h1>
-      <p>you can search you favpurite pokemon</p>
+      <p>you can search you favourite pokemon</p>
       <form className="pokedex_search_form" onSubmit={handleSearch} action="">
         <input ref={inputSearch} type="text" placeholder="all pokemons" />
         <button>Search</button>
@@ -54,7 +54,7 @@ const PokeDexPage = () => {
       />
       <div className="pokeCard-containe">
         {
-          pokemons?.results.map( poke => (
+          pokeFiltered?.map( poke => (
             <PokeCard
               key={poke.url}
               url={poke.url}

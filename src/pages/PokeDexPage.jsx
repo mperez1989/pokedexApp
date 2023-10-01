@@ -50,12 +50,10 @@ const PokeDexPage = () => {
       </form>
       <Select
         setTypeSelected={setTypeSelected}
-        
       />
-
       <div className="pokeCard-containe">
         {
-          pokeFiltered?.map( poke => (
+          pokemons?.results.map( poke => (
             <PokeCard
               key={poke.url}
               url={poke.url}

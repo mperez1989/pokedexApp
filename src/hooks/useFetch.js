@@ -10,8 +10,12 @@ const useFetch = (url) => {
   const getApi = () => {
     setIsLoading(true)
     axios.get(url)
-        .then(res => setInfoApi(res.data))
-        .catch(err => console.log(err))
+        .then(res => {
+          setInfoApi(res.data)
+        })
+        .catch(err => {
+          console.log(err)
+        })
         .finally(() => setIsLoading(false))
       
   }

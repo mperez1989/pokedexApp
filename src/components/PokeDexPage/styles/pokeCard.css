@@ -31,6 +31,9 @@
     font-weight: bold;
     margin-bottom: 0.2em;
 }
+p {
+    font-size: 1.5rem;
+}
 .pokecard__types {
     display: flex;
     justify-content: center;

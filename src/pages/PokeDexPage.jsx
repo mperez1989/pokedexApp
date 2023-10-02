@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import PokeCard from "../components/PokeDexPage/PokeCard"
 import Select from "../components/PokeDexPage/Select"
 import "../pages/style/pokeDexPage.css"
+import Loader from "../components/PokeDexPage/Loader"
 
 const PokeDexPage = () => {
 
@@ -14,7 +15,7 @@ const PokeDexPage = () => {
   const inputSearch = useRef()
 
   const url = `https://pokeapi.co/api/v2/pokemon?limit=20`
-  const [ pokemons, getPokemons, getTypePokemon] = useFetch(url)
+  const [ pokemons, getPokemons, getTypePokemon, isLoading] = useFetch(url)
 
   useEffect(() => {
     if(typeSelected === "allPokemons") {
@@ -54,13 +55,17 @@ const PokeDexPage = () => {
       />
       <div className="pokeCard-containe">
         {
-          pokeFiltered?.map( poke => (
-            <PokeCard
-              key={poke.url}
-              url={poke.url}
-            />
-
-          ))
+          isLoading
+            ? <Loader />
+            : (
+              pokeFiltered?.map( poke => (
+                <PokeCard
+                  key={poke.url}
+                  url={poke.url}
+                />
+    
+              ))
+            )
         }
       </div>
     </div>

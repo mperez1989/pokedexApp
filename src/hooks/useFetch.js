@@ -4,11 +4,16 @@ import { useState } from "react"
 const useFetch = (url) => {
 
   const [infoApi, setInfoApi] = useState()
+  const [isLoading, setIsLoading] = useState(true)
+
 
   const getApi = () => {
+    setIsLoading(true)
     axios.get(url)
         .then(res => setInfoApi(res.data))
         .catch(err => console.log(err))
+        .finally(() => setIsLoading(false))
+      
   }
 
   const getTypeApi = (urlType) => {
@@ -23,7 +28,7 @@ const useFetch = (url) => {
         .catch(err => console.log(err))
   }
 
-  return [infoApi, getApi, getTypeApi] 
+  return [infoApi, getApi, getTypeApi, isLoading] 
 }
 
 export default useFetch

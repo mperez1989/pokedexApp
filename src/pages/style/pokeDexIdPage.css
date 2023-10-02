@@ -1,8 +1,23 @@
+.icon {
+    position: absolute;
+    top: 15px;
+    width: 50px;
+    aspect-ratio: 1;
+    background-image: url("/public/arrow-left.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
 .pkecard__id {
     width: 95%;
     max-width: 360px;
     border-radius: 0.7em;
-    margin-top: 50px;
+    margin-top: 70px;
     border: 0.5em solid #555;
     background-color: white;
     border-color: grey;
@@ -152,6 +167,17 @@
     background-color: grey;
     text-transform: capitalize;
 
+}
+@media(min-width: 500px){
+    .icon {
+        left: 30px;
+    }
+}
+@media(min-width: 1100px){
+    .icon {
+        top: 50px;
+        left: 80px;
+    }
 }
 .grass-gradiente {
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);

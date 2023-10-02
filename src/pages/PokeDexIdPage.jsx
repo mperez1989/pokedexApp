@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
 import { useEffect } from "react"
 import "./style/pokeDexIdPage.css"
@@ -6,6 +6,7 @@ import "./style/pokeDexIdPage.css"
 const PokeDexIdPage = () => {
 
     const { id }= useParams()
+    const navigate = useNavigate()
 
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`
     const [ pokemon, getPokemon ] = useFetch(url)
@@ -16,9 +17,15 @@ const PokeDexIdPage = () => {
     
     const typeColor = pokemon?.types[0].type.name;
 
+    const handleReturn = () => {
+      navigate("/pokedex")
+      
+    }
+
 
   return (
     <div className="pokecard__id__container">
+      <span onClick={handleReturn} className="icon"></span>
       <article className={`pkecard__id ${typeColor}-border`}>
         <header className={`pokecard__id__header ${typeColor}-gradient`}>
         <img src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />

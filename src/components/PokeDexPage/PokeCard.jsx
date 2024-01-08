@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch"
 import { useNavigate } from "react-router-dom"
 import "./styles/pokeCard.css"
 
-const PokeCard = ({ url }) => {
+const PokeCard = ({ url}) => {
 
     const [pokemon, getPokemon]= useFetch(url)
     const navigate = useNavigate()
@@ -48,7 +48,9 @@ const PokeCard = ({ url }) => {
             </ul>
         </section>
     </article>
-  )
+
+        )
+  
 }
 
 export default PokeCard

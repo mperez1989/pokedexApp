@@ -5,6 +5,8 @@ const useFetch = (url) => {
 
   const [infoApi, setInfoApi] = useState()
   const [isLoading, setIsLoading] = useState(true)
+  
+  
 
 
   const getApi = () => {
@@ -15,6 +17,7 @@ const useFetch = (url) => {
         })
         .catch(err => {
           console.log(err)
+          
         })
         .finally(() => setIsLoading(false))
       

@@ -47,7 +47,7 @@ const PokeDexPage = () => {
       <h1>Hi ¡{trainer}!</h1>
       <p>you can search you favourite pokemon</p>
       <form className="pokedex_search_form" onSubmit={handleSearch} action="">
-        <input ref={inputSearch} type="text" placeholder="look for a pokemon" />
+        <input ref={inputSearch} type="text" placeholder="Search a pokemon" />
         <button>Search</button>
       </form>
       <Select
@@ -62,6 +62,7 @@ const PokeDexPage = () => {
                 <PokeCard
                   key={poke.url}
                   url={poke.url}
+                  
                 />
     
               ))
